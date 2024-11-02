@@ -16,9 +16,9 @@ public class RocketLaunch : MonoBehaviour
     public ParticleSystem rightBoosterParticles; // Particles for the right booster
     public ParticleSystem mainThrusterParticles; // Particles for the main booster
 
-    [HideInInspector] public Rigidbody rb;
-    [HideInInspector] public float currentFuel;
-    [HideInInspector] public bool isLaunched = false;
+    private Rigidbody rb;
+    private float currentFuel;
+    private bool isLaunched = false;
 
     // Thrust multipliers controlled by the reinforcement learning model
     [HideInInspector] public float leftBoosterControl = 0f; // Control for left booster
@@ -84,7 +84,7 @@ public class RocketLaunch : MonoBehaviour
         }
     }
 
-    public void ApplySingleBoosterThrust(bool left)
+    void ApplySingleBoosterThrust(bool left)
     {
         Vector3 thrustDirection = transform.up * boosterThrust;
         Vector3 thrustPosition = left
@@ -126,7 +126,7 @@ public class RocketLaunch : MonoBehaviour
         }
     }
 
-    public void TriggerFailure()
+    void TriggerFailure()
     {
         // Implement failure response logic here
         isLaunched = false; // Stop the launch
@@ -136,7 +136,7 @@ public class RocketLaunch : MonoBehaviour
         transform.position = new Vector3(0, 0, 0); // Reset position to origin or any starting point
     }
 
-    public void ApplyMainThrust()
+    void ApplyMainThrust()
     {
         if (isLaunched)
         {
@@ -154,7 +154,7 @@ public class RocketLaunch : MonoBehaviour
         }
     }
 
-    public void ApplyBoosterThrust()
+    void ApplyBoosterThrust()
     {
         // Set correct left and right thrust positions around the rocket's center
         Vector3 mainThrustPosition = transform.position;
@@ -190,20 +190,21 @@ public class RocketLaunch : MonoBehaviour
         // Calculate drag force
         float velocitySquared = rb.velocity.sqrMagnitude;
         Vector3 dragDirection = -rb.velocity.normalized;
-        float dragForceMagnitude = 0.5f * dragCoefficient * airDensity * crossSectionalArea * velocitySquared;
-        Vector3 dragForce = dragForceMagnitude * dragDirection;
+        float dragForceMagnitude = 0.5f * dragCoefficient * airDensity * velocitySquared * crossSectionalArea;
 
-        rb.AddForce(dragForce);
+        // Apply drag force
+        rb.AddForce(dragDirection * dragForceMagnitude);
     }
 
     void ApplyTippingForce()
     {
-        float angle = Vector3.Angle(transform.up, Vector3.up);
-        if (angle > tippingThreshold)
+        // Calculate the tilt angle
+        float tiltAngle = Vector3.Angle(transform.up, Vector3.up);
+        if (tiltAngle > tippingThreshold)
         {
-            // Apply a corrective torque
-            Vector3 tippingDirection = Vector3.Cross(transform.up, Vector3.up).normalized;
-            rb.AddTorque(tippingDirection * tippingTorqueFactor * angle);
+            // Apply corrective torque to stabilize the rocket
+            Vector3 torque = Vector3.Cross(transform.up, Vector3.up) * tippingTorqueFactor;
+            rb.AddTorque(torque);
         }
     }
 }
