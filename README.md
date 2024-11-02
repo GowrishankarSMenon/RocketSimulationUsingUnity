@@ -15,10 +15,10 @@ This is a hackathon project aimed at simulating a rocket launch using reinforcem
 - [ml agents:- mlagents 1.1.0]
 
 ### Links
-- Project google Link:- https://drive.google.com/drive/folders/15iTQurSdcJn8OeoL7bpSKCDWmAgPxFFS?usp=sharing
+- Project google Link[INITIAL COMMIT]:- https://drive.google.com/drive/folders/15iTQurSdcJn8OeoL7bpSKCDWmAgPxFFS?usp=sharing
+- Project google Link[SECOND COMMIT]:- - Project google Link[INITIAL COMMIT]:- https://drive.google.com/drive/folders/15iTQurSdcJn8OeoL7bpSKCDWmAgPxFFS?usp=sharing
 
 ### Installation
 1. Download from the google link
 2. Redirect to that directory
 3. Run the simulatin based on the video reference provided in the shared google link
-
