@@ -1,0 +1,65 @@
+{
+    "StableAscent": {
+        "checkpoints": [
+            {
+                "steps": 499953,
+                "file_path": "results\\test3\\StableAscent\\StableAscent-499953.onnx",
+                "reward": -8.591353199709959,
+                "creation_time": 1730560855.3863294,
+                "auxillary_file_paths": [
+                    "results\\test3\\StableAscent\\StableAscent-499953.pt"
+                ]
+            },
+            {
+                "steps": 999999,
+                "file_path": "results\\test3\\StableAscent\\StableAscent-999999.onnx",
+                "reward": -8.501793103546932,
+                "creation_time": 1730562024.4744604,
+                "auxillary_file_paths": [
+                    "results\\test3\\StableAscent\\StableAscent-999999.pt"
+                ]
+            },
+            {
+                "steps": 1499998,
+                "file_path": "results\\test3\\StableAscent\\StableAscent-1499998.onnx",
+                "reward": -8.498918269689266,
+                "creation_time": 1730563241.7939632,
+                "auxillary_file_paths": [
+                    "results\\test3\\StableAscent\\StableAscent-1499998.pt"
+                ]
+            },
+            {
+                "steps": 1999998,
+                "file_path": "results\\test3\\StableAscent\\StableAscent-1999998.onnx",
+                "reward": -8.439732142857142,
+                "creation_time": 1730564461.296881,
+                "auxillary_file_paths": [
+                    "results\\test3\\StableAscent\\StableAscent-1999998.pt"
+                ]
+            },
+            {
+                "steps": 2000010,
+                "file_path": "results\\test3\\StableAscent\\StableAscent-2000010.onnx",
+                "reward": -8.440528634361234,
+                "creation_time": 1730564461.3385887,
+                "auxillary_file_paths": [
+                    "results\\test3\\StableAscent\\StableAscent-2000010.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2000010,
+            "file_path": "results\\test3\\StableAscent.onnx",
+            "reward": -8.440528634361234,
+            "creation_time": 1730564461.3385887,
+            "auxillary_file_paths": [
+                "results\\test3\\StableAscent\\StableAscent-2000010.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}

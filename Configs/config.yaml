@@ -1,0 +1,30 @@
+behaviors:
+  StableAscent:
+    trainer_type: ppo
+    hyperparameters:
+      batch_size: 1024           # Increase if memory allows, for smoother gradients
+      buffer_size: 10240         # Collect more experiences before updating the model
+      learning_rate: 0.0003      # Learning rate for PPO updates
+      beta: 0.005                # Strength of entropy regularization, helps exploration
+      epsilon: 0.2               # PPO clipping parameter
+      lambd: 0.95                # GAE lambda
+      num_epoch: 3               # Number of optimization epochs per PPO update
+      learning_rate_schedule: linear # Linearly decays learning rate
+
+    network_settings:
+      normalize: true            # Normalize input observations
+      hidden_units: 256          # Increase if your agent needs to learn complex patterns
+      num_layers: 2              # Number of hidden layers
+      vis_encode_type: simple    # Encoder type for visual observations (if using visual input)
+
+    reward_signals:
+      extrinsic:
+        gamma: 0.99              # Discount factor for future rewards
+        strength: 1.0            # Reward scale for extrinsic rewards
+
+    max_steps: 2000000           # Increase max_steps for longer training (e.g., 2 million steps)
+    time_horizon: 64             # Number of steps to collect per agent before updating
+    summary_freq: 10000          # Frequency of logging training summaries
+
+    # Model checkpoint settings
+    keep_checkpoints: 5          # Keeps the latest 5 checkpoints
