@@ -70,3 +70,4 @@ This hackathon project simulates a rocket launch using reinforcement learning in
 - This simulation is set to end episodes on critical violations or successful completion of loops.
 - Excuse my unprofessional approach to the video, i din't have time to install the video recording softwares (used game bar and parents) :)(
 - This model takes 7-8 hrs to finish training in the video provided it's only in training for 15 min, please consider training more to achive better results :)
+- Forgot to add commit message for the last commit, named as "Added files via upload"
