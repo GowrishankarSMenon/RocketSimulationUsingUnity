@@ -65,6 +65,28 @@ This hackathon project simulates a rocket launch using reinforcement learning in
   - The plane turns **red** when the rocket violates undesirable conditions.
   - The plane turns **green** when the rocket successfully passes through a loop.
 
+---
+
+### Further Improvements and Plans
+
+1. **Enhanced Visual Effects**: 
+   - Implement more sophisticated particle effects during the rocket's launch and while passing through loops to create a visually engaging experience.
+   - Add camera shake and dynamic lighting effects to heighten the excitement during significant actions, such as loop passage or nearing the target.
+
+2. **Additional Thrusters**:
+   - Introduce three distinct thrusters: a main thruster for ascent, and separate left and right thrusters for lateral movement control. This will provide finer control over the rocket's orientation and maneuverability.
+
+3. **Endpoint for Completion**:
+   - Develop a designated endpoint for the rocket to reach after successfully passing through all the loops. This will mark the end of the simulation and trigger the completion sequence, allowing players to assess their performance.
+
+4. **Graphical User Interface (GUI)**:
+   - Create a GUI window displaying various flight properties such as altitude, speed, fuel level, and current loop count. This will provide players with real-time feedback and enhance their interaction with the simulation.
+   - Include controls within the GUI for adjusting settings like thrust levels and camera perspectives, allowing for a customized user experience.
+
+These planned improvements aim to enrich gameplay, provide players with better control and feedback, and elevate the overall aesthetic quality of the simulation.
+
+--- 
+
 ## Notes
 - Follow the video guide in the Google Drive link for a step-by-step tutorial.
 - This simulation is set to end episodes on critical violations or successful completion of loops.
