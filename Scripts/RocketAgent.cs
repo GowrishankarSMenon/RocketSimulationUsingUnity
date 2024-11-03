@@ -45,10 +45,17 @@ public class RocketAgent : Agent
             EndEpisode();
         }
 
-        //Reward if passes thorugh loop
+        // Reward if passes through loop
         if (rocketLaunch.isLoopPassed)
         {
             AddReward(7.5f);
+        }
+
+        // Proximity reward for approaching the loop
+        float proximityReward = rocketLaunch.CalculateProximityReward();
+        if (proximityReward > 0)
+        {
+            AddReward(proximityReward); // Incremental reward based on proximity to loop
         }
     }
 

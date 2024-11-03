@@ -1,0 +1,29 @@
+{
+    "StableAscent": {
+        "checkpoints": [
+            {
+                "steps": 128006,
+                "file_path": "results\\testforvid\\StableAscent\\StableAscent-128006.onnx",
+                "reward": 323.39566837407193,
+                "creation_time": 1730617932.2072647,
+                "auxillary_file_paths": [
+                    "results\\testforvid\\StableAscent\\StableAscent-128006.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 128006,
+            "file_path": "results\\testforvid\\StableAscent.onnx",
+            "reward": 323.39566837407193,
+            "creation_time": 1730617932.2072647,
+            "auxillary_file_paths": [
+                "results\\testforvid\\StableAscent\\StableAscent-128006.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "2.5.1+cpu"
+    }
+}
