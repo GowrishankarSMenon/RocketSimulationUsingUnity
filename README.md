@@ -21,6 +21,8 @@ This hackathon project simulates a rocket launch using reinforcement learning in
 - **Initial Commit**: [Initial commit](https://drive.google.com/drive/folders/15iTQurSdcJn8OeoL7bpSKCDWmAgPxFFS?usp=sharing)
 - **Second Commit**: [Second commit](https://drive.google.com/drive/folders/16aFZkkReiwz5arkJLj06_aTd20dL3fkq?usp=sharing)
 - **Third Commit**: [Third commit](https://drive.google.com/drive/folders/1MzVgCjg5PtfUeL6o56_2-BZyHeFJLXb1?usp=sharing)
+- **Fourth commit**: [Third commit](https://drive.google.com/drive/folders/11tyr07dGI5nbntAEENcbd22ZN-xwyMBR?usp=sharing)
+- **Videos**: [Videos](https://drive.google.com/drive/folders/1UevUKedPkf7aEL38sx2xL2197VPKoRac?usp=sharing)
 
 ### Installation & Setup
 1. **Download**: Access the project files through the provided Google Drive link and download the complete directory.
@@ -66,3 +68,5 @@ This hackathon project simulates a rocket launch using reinforcement learning in
 ## Notes
 - Follow the video guide in the Google Drive link for a step-by-step tutorial.
 - This simulation is set to end episodes on critical violations or successful completion of loops.
+- Excuse my unprofessional approach to the video, i din't have time to install the video recording softwares (used game bar and parents) :)(
+- This model takes 7-8 hrs to finish training in the video provided it's only in training for 15 min, please consider training more to achive better results :)
