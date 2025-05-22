@@ -1,7 +1,7 @@
 # Rocket Simulation Using Unity
 
 ## Project Overview
-This hackathon project simulates a rocket launch using reinforcement learning in Unity. The simulation applies advanced techniques to model rocket behavior and environmental interactions, creating a challenging task for the AI agent to control the rocket under realistic physics conditions. The primary goal is to simulate a stable ascent, navigate through loops a specified number of times (denoted as *n*), and avoid undesirable conditions.
+This project simulates a rocket launch using reinforcement learning in Unity. The simulation applies advanced techniques to model rocket behavior and environmental interactions, creating a challenging task for the AI agent to control the rocket under realistic physics conditions. The primary goal is to simulate a stable ascent, navigate through loops a specified number of times (denoted as *n*), and avoid undesirable conditions.
 
 ## Features
 - **Reinforcement Learning**: Utilizes Unity's ML-Agents to train an agent to control rocket dynamics effectively.
